@@ -1,0 +1,14 @@
+@use '~sass-general-components/logo/logo';
+@use '~sass-general-variables' as general;
+@use '../../variables/variables_x-files' as theme;
+
+.#{theme.$theme-css-class} {
+  .prj-logo {
+    background-image: url(~img/themes/x-files/logo.svg);
+    background-repeat: no-repeat;
+    width: 20rem;
+    @media (max-width: general.$mobile-width) {
+      height: 10rem;
+    }
+  }
+}

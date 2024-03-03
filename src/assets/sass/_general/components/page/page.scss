@@ -1,0 +1,28 @@
+@use '~sass-general-variables' as general;
+
+.prj-page {
+  $header-row-end: 2;
+  $footer-row-start: 3;
+
+  display: grid;
+  grid-template-columns: [l1 start] 1fr [l2 end];
+  grid-template-rows: [l1 start] general.$header-height [l2] 1fr [l3] general.$header-height [l4 end];
+  @media (max-width: general.$mobile-width) {
+    grid-template-rows: [l1 start] 1fr [l2] 1fr [l3] 1fr [l4 end];
+  }
+
+  .prj-page__header {
+    grid-column: start / end;
+    grid-row: start / $header-row-end;
+  }
+
+  .prj-page__content {
+    grid-column: start/end;
+    grid-row: #{$header-row-end} / #{$footer-row-start};
+  }
+
+  .prj-page__footer {
+    grid-column: start / end;
+    grid-row: $footer-row-start / end;
+  }
+}

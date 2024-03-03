@@ -1,0 +1,17 @@
+@use '~sass-general-components/btn/btn';
+@use '../../variables/variables_x-files' as theme;
+
+.#{theme.$theme-css-class} {
+  .prj-btn {
+    background-color: theme.$color-primary;
+    border: 0;
+    border-radius: theme.$border-radius;
+    color: theme.$color-quaternary;
+    font-size: 0.8rem;
+    font-weight: bold;
+
+    &:visited {
+      color: theme.$color-quaternary;
+    }
+  }
+}

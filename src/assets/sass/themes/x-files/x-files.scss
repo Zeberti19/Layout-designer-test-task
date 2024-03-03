@@ -1,0 +1,12 @@
+/*elements*/
+@use 'elements/elements_x-files';
+
+/*general components*/
+@use '~sass-general-components/image-gallery/image-gallery';
+
+/*theme components*/
+@use 'components/page/page_x-files';
+@use 'components/btn/btn_x-files';
+@use 'components/contact-card/contact-card_x-files';
+@use 'components/image-container/image-container_x-files';
+@use 'components/logo/logo_x-files';

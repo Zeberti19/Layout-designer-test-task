@@ -1,0 +1,20 @@
+$container-padding-bottom: 0.5rem;
+$container-padding-top: 0.5rem;
+$container-padding-left: 0.5rem;
+$container-padding-right: 0.5rem;
+$container-padding: $container-padding-top $container-padding-right $container-padding-bottom $container-padding-left;
+
+$label-margin-bottom: 1rem;
+$label-margin-top: 1rem;
+$label-margin-left: 0rem;
+$label-margin-right: 0rem;
+$label-margin: $label-margin-top $label-margin-right $label-margin-bottom $label-margin-left;
+
+$font-size-min: 14px;
+$font-size-step: 0.3vw;
+
+$header-height: min(max(20%, 8rem), 15rem);
+$footer-height: $header-height;
+
+$screen-width-min: 360px;
+$mobile-width: 576px;

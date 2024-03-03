@@ -1,0 +1,14 @@
+@use '~sass-general-variables' as general;
+@use '../../variables/variables_x-files' as theme;
+
+.#{theme.$theme-css-class} {
+  &.prj-page {
+    .prj-page__footer {
+      background: linear-gradient(theme.$color-quaternary, theme.$color-secondary);
+      margin-top: -2px;
+      @media (max-width: general.$mobile-width) {
+        display: none;
+      }
+    }
+  }
+}

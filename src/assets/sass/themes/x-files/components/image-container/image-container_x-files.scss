@@ -1,0 +1,8 @@
+@use '~sass-general-components/image-container/image-container';
+@use '../../variables/variables_x-files' as theme;
+
+.#{theme.$theme-css-class} {
+  .image-container {
+    border-radius: theme.$border-radius;
+  }
+}

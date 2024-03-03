@@ -1,0 +1,28 @@
+@use '~sass-general-variables' as general;
+
+.contact-card {
+  padding: general.$container-padding;
+  width: 20rem;
+
+  .contact-card__image-place {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15rem;
+
+    .contact-card__image-container {
+      height: 75%;
+      width: 50%;
+    }
+
+    .contact-card__image {
+      border-radius: 50%;
+    }
+  }
+
+  .contact-card__details {
+    .contact-card__links {
+      margin: 1.5rem 0;
+    }
+  }
+}

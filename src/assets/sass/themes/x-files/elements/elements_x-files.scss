@@ -1,0 +1,29 @@
+@use '../variables/variables_x-files' as theme;
+
+.#{theme.$theme-css-class} {
+  @at-root {
+    html#{&} {
+      color: theme.$color-primary;
+      font-family: "Courier New", "Nimbus Mono L", monospace;
+    }
+  }
+
+  a {
+    color: theme.$color-secondary;
+
+    &:visited {
+      color: theme.$color-ternary;
+    }
+  }
+
+  h1 {
+    font-weight: normal;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: theme.$color-primary;
+  }
+  img {
+    border-radius: theme.$border-radius;
+  }
+}

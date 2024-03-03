@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" class="x-files">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Test task of Chesnokov Evgenii. Page created by using HTML and SCSS an the following structure: header with logo, intro paragraph with two links, an unordered list, an image gallery with 5 images using CSS grid, a contact card, a CTA button linking to CV, portfolio">
+    <title>Chesnokov Evgenii. Test task. HTML and SCSS with a minimal design</title>
+</head>
+<body class="x-files prj-page">
+    <header class="prj-page__header">
+        <div class="prj-page__header-logo prj-logo"></div>
+        <h1 class="prj-page__header-text">
+            <span>Chesnokov Evgenii</span>
+            <span>Test task</span>
+        </h1>
+    </header>
+    <main class="prj-page__content">
+        <section>
+            <header>
+                <h2>Description</h2>
+            </header>
+            <p>
+                The <a href="https://en.wikipedia.org/wiki/The_X-Files">X-Files</a> is an American science fiction drama television series created by <a href="https://en.wikipedia.org/wiki/Chris_Carter_(screenwriter)">Chris Carter</a>.
+                The original television series aired from September 1993 to May 2002 on Fox.
+                During its original run, the program spanned nine seasons, with 202 episodes.
+                A short tenth season consisting of six episodes ran from January to February 2016.
+                A short tenth season consisting of six episodes ran from January to February 2016.
+                Following the ratings success of this revival, The X-Files returned for an eleventh season of ten
+                episodes, which ran from January to March 2018.
+                In addition to the television series, two feature films have been released:
+                The 1998 film The X-Files and the stand-alone film The X-Files: I Want to Believe,
+                released in 2008, six years after the original television run had ended.
+            </p>
+        </section>
+        <section>
+            <header>
+                <h2>Main Roles</h2>
+            </header>
+            <ul>
+                <li>
+                    David Duchovny
+                </li>
+                <li>
+                    Gillian Anderson
+                </li>
+                <li>
+                    Robert Patrick
+                </li>
+                <li>
+                    Annabeth Gish
+                </li>
+                <li>
+                    Mitch Pileggi
+                </li>
+            </ul>
+        </section>
+        <section>
+            <header>
+                <h2>Series Episodes</h2>
+            </header>
+            <div class="image-gallery">
+                <figure class="image-gallery__item">
+                    <div class="image-gallery__image-container image-container">
+                        <img src="<%= require('./assets/images/gallery/x-files/x-files_0001.jpg') %>" alt="Season 1. Episode &ldquo;Pilot&rdquo;">
+                    </div>
+                    <div class="image-gallery__image-label">Season 1. Episode "Pilot"</div>
+                </figure>
+                <figure class="image-gallery__item">
+                    <div class="image-gallery__image-container image-container">
+                        <img src="<%= require('./assets/images/gallery/x-files/x-files_0002.jpg') %>"
+                             alt="Seadon 2. Episode &ldquo;Lttle Green Men&rdquo;">
+                    </div>
+                    <div class="image-gallery__image-label">Season 2. Episode "Lttle Green Men"</div>
+                </figure>
+                <figure class="image-gallery__item">
+                    <div class="image-gallery__image-container image-container">
+                        <img src="<%= require('./assets/images/gallery/x-files/x-files_0003.jpg') %>"
+                             alt="Season 2. Episode &ldquo;Blood&rdquo;">
+                    </div>
+                    <div class="image-gallery__image-label">Season 2. Episode "Blood"</div>
+                </figure>
+                <figure class="image-gallery__item">
+                    <div class="image-gallery__image-container image-container">
+                        <img src="<%= require('./assets/images/gallery/x-files/x-files_0004.jpg') %>"
+                             alt="Season 3. Episode &ldquo;The Blessing Way&rdquo;">
+                    </div>
+                    <div class="image-gallery__image-label">Season 3. Episode "The Blessing Way"</div>
+                </figure>
+                <figure class="image-gallery__item">
+                    <div class="image-gallery__image-container image-container">
+                        <img src="<%= require('./assets/images/gallery/x-files/x-files_0005.jpg') %>"
+                             alt="Season 6. Episode &ldquo;Drive&rdquo;">
+                    </div>
+                    <div class="image-gallery__image-label">Season 6. Episode "Drive"</div>
+                </figure>
+            </div>
+        </section>
+        <section>
+            <header>
+                <h2>Developer contact details</h2>
+            </header>
+            <figure class="contact-card">
+                <div class="contact-card__image-place">
+                    <div class="contact-card__image-container image-container">
+                        <img class="contact-card__image"
+                             src="<%= require('./assets/images/people/project/man.jpg') %>"
+                             alt="A man">
+                    </div>
+                </div>
+                <div class="contact-card__details">
+                    <div class="contact-card__description">Chesnokov Evgenii</div>
+                    <div class="contact-card__links">
+                        <a class="prj-btn" href="https://github.com/Zeberti19?tab=repositories" target="_blank">CV</a>
+                        <a class="prj-btn" href="https://github.com/Zeberti19?tab=repositories" target="_blank">Portfolio</a>
+                    </div>
+                </div>
+            </figure>
+        </section>
+    </main>
+    <footer class="prj-page__footer"></footer>
+</body>
+</html>

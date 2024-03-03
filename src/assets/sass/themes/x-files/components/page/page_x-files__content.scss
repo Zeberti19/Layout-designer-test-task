@@ -1,0 +1,14 @@
+@use '~sass-general-variables' as general;
+@use '../../variables/variables_x-files' as theme;
+
+.#{theme.$theme-css-class} {
+  &.prj-page {
+    .prj-page__content {
+      background-color: theme.$color-quaternary;
+      padding: 3rem;
+      @media (max-width: general.$mobile-width) {
+        padding: 1rem;
+      }
+    }
+  }
+}

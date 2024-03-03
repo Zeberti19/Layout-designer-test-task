@@ -1,0 +1,38 @@
+@use '~sass-general-variables' as general;
+@use '../../variables/variables_x-files' as theme;
+
+.#{theme.$theme-css-class} {
+  &.prj-page {
+    .prj-page__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      background: linear-gradient(theme.$color-secondary, theme.$color-quaternary);
+      color: theme.$color-primary;
+      margin-bottom: -2px;
+      padding: theme.$padding 2rem;
+      @media (max-width: general.$mobile-width) {
+        flex-direction: column;
+        padding: 1rem 0;
+      }
+
+      .prj-page__header-logo {
+        margin-right: 3rem;
+        @media (max-width: general.$mobile-width) {
+          margin: 0;
+        }
+      }
+
+      .prj-page__header-text {
+        display: flex;
+        flex-direction: column;
+        @media (max-width: general.$mobile-width) {
+          align-items: center;
+          margin-top: 3rem;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

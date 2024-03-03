@@ -1,0 +1,38 @@
+@use '~sass-general-variables' as general;
+
+html {
+  color: general.$color-primary;
+  font-size: calc(#{general.$font-size-min} + #{general.$font-size-step});
+  height: 100%;
+  width: 100%;
+  min-width: general.$screen-width-min;
+}
+body {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+figure {
+  margin: 0;
+}
+img {
+  height: auto;
+  width: 100%;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+main {
+  box-sizing: border-box;
+  padding: general.$container-padding;
+}
+h2 {
+  margin: 2rem 0;
+}
+ul {
+  li {
+    margin: general.$label-margin;
+  }
+}

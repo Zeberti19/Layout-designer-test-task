@@ -1,0 +1,15 @@
+@use '~sass-general-components/contact-card/contact-card';
+@use '../../variables/variables_x-files' as theme;
+
+.#{theme.$theme-css-class} {
+  .contact-card {
+    background: linear-gradient(theme.$color-secondary, theme.$color-quaternary 37%, theme.$color-secondary 75%);
+    border-radius: theme.$border-radius;
+
+    .contact-card__details {
+      color: theme.$color-quaternary;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+}

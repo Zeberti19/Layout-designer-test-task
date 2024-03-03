@@ -1,0 +1,25 @@
+@use '~sass-general-variables' as general;
+
+.image-gallery {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, 20rem);
+  grid-auto-rows: 15rem;
+
+  .image-gallery__image-container {
+    height: 80%;
+
+    @media (max-width: general.$mobile-width) {
+      & > img {
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+
+  .image-gallery__image-label {
+    margin: general.$label-margin;
+    padding: 0;
+    text-align: center;
+  }
+}

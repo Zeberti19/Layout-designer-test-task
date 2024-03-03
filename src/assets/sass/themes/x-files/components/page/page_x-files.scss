@@ -1,0 +1,14 @@
+@use '~sass-general-variables' as general;
+@use '../../variables/variables_x-files' as theme;
+@use '~sass-general-components/page/page';
+@use 'page_x-files__header';
+@use 'page_x-files__content';
+@use 'page_x-files__footer';
+
+.#{theme.$theme-css-class} {
+  .prj-page {
+    @media (max-width: general.$mobile-width) {
+      grid-template-rows: [l1 start] 1fr [l2] 1fr [l3 end];
+    }
+  }
+}
